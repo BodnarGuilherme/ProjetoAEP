@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aguá e Saneamento</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="root">
+      <div id="top"></div>
+      <div class="tl1" id="tl1">
+        <a>
+          <p>Vamos calcular seus gastos com a água?.</p>
+          <h1>Descubra como está o seu consumo.</h1>
+          <div class="btns">
+            <button onclick="goToTl2()">Começar</button>
+          </div>
+        </a>
+      </div>
+      <div class="tl2" id="tl2">
+        <div class="container">
+          <div class="inpt">
+            <form>
+              <input
+                type="number"
+                placeholder="Nº DE PESSOAS NA CASA"
+                id="qP"
+              />
+              <button<a onclick="goToTl3()">Continuar</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="tl3" id="tl3">
+        <div class="container">
+          <div class="inpt">
+            <form>
+              <input type="number" placeholder="CONSUMO MENSAL (M3)" id="qA" />
+              <a onclick="calculate()" href="#top">Continuar</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="tl4" id="tl4">
+        <div class="containerRes">
+          <div class="icon" id="icon"></div>
+          <h2 id="t1">SEU CONSUMO DE PESSOA/DIA FOI DE 0.04 M3 OU 45 LITROS</h2>
+          <h2 id="t2" class="msg">PARABÉNS, USUÁRIO CONSCIENTE!!!</h2>
+          <p>
+            Segundo a ONU (Organização das Nações Unidas), 110 litros (0.11 m3)*
+            de água por dia é suficiente para atender as necessidade básicas de
+            uma pessoa.
+          </p>
+          <p>* Fonte: OMS - Organização Mundial de Saúde</p>
+          <p>Abaixo você confere 10 dicas para economizar água:</p>
+          <ol>
+            <li>
+              - No Banho: Se molhe, feche o chuveiro, se ensaboe e depois abra
+              para enxaguar. Não fique com o chuveiro aberto. O consumo cairá de
+              180 para 48 litros.
+            </li>
+            <li>
+              - Ao escovar os dentes: escove os dentes e enxágüe a boca com a
+              água do copo. Economize 3 litros de água.
+            </li>
+            <li>
+              - Na descarga: Verifique se a válvula não está com defeito,
+              aperte-a uma única vez e não jogue lixo e restos de comida no vaso
+              sanitário.
+            </li>
+            <li>
+              - Na torneira: Uma torneira aberta gasta de 12 a 20 litros/minuto.
+              Pingando, 46 litros/dia. Isto significa, 1.380 litros por mês.
+              Feche bem as torneiras.
+            </li>
+            <li>
+              - Vazamentos: Um buraco de 2 milímetros no encanamento desperdiça
+              cerca de 3 caixas d’água de mil litros.
+            </li>
+            <li>
+              - Na caixa d’água: Não a deixe transbordar e mantenha-a tampada.
+            </li>
+            <li>
+              - Na lavagem de louças: Lavar louças com a torneira aberta, o
+              tempo todo, desperdiça até 105 litros. Ensaboe a louça com a
+              torneira fechada e depois enxágüe tudo de uma vez. Na máquina de
+              lavar são gastos 40 litros. Utilize-a somente quando estiver
+              cheia.
+            </li>
+            <li>
+              - Regar jardins e plantas: No inverno, a rega pode ser feita dia
+              sim, dia não, pela manhã ou à noite. Use mangueira com
+              esguicho-revólver ou regador.
+            </li>
+            <li>
+              - Lavar carro: com uma mangueira gasta 600 litros de água. Só lave
+              o carro uma vez por mês, com balde de 10 litros, para ensaboar e
+              enxaguar. Para isso, use a água da sobra da máquina de lavar
+              louça.
+            </li>
+            <li>
+              - Na limpeza de quintal e calçadas use vassoura: Se precisar
+              utilize a água que sai do enxágüe da máquina de lavar.
+            </li>
+          </ol>
+          <button onclick="refreshPage()">Recalcular</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
